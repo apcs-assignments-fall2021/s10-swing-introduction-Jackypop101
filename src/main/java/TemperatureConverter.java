@@ -37,13 +37,13 @@ public class TemperatureConverter {
 
         button1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
-                field2.setText(((Double.parseDouble(field1.getText()) - 32)*(5/9)) + "");
+                field2.setText(((Double.parseDouble(field1.getText()) - 32)*5/9) + "");
             }
         });
 
         button2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
-                field1.setText(((Double.parseDouble(field2.getText())*(5/9) + 32)) + "");
+                field1.setText(((Double.parseDouble(field2.getText())*9/5 + 32)) + "");
             }
         });
 
